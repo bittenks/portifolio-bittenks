@@ -1,0 +1,26 @@
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+
+
+.w3-content-w3-margin-top {
+    max-width:1400px;
+}
+
+h2 {
+    color: white
+}
+
+.w3-tooltip, .w3-display-container {
+    position: relative;
+    margin-top: 1rem;
+}
+.w3-white, .w3-hover-white:hover {
+    color: #000!important;
+    background-color: #fff!important;
+    margin-top: 1rem;
+}
+a{
+    text-decoration: none;
+    color: cornflowerblue;
+    
+}
+
