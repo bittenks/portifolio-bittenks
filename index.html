@@ -6,21 +6,52 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="/Portfolio/src/style.css">
+<link rel="stylesheet" href="/style.css">
+
 <body class="w3-light-grey">
 
   <link rel="shortcut icon" href="https://i.imgur.com/rh1Cfe5.png" type="image/ico">
 <div class="w3-content-w3-margin-top" >
+ 
+  <div class="toggle" >
+    <input type="checkbox" class="checkbox" id="chk" />
+    <label class="label" for="chk">
+      <i class="fas fa-moon"></i>
+      <i class="fas fa-sun"></i>
+      <div class="ball"></div>
+    </label>
+  </div>
 
+
+<script>
+const chk = document.getElementById('chk');
+var element = document.getElementById("container1");
+chk.addEventListener('change', () => {
+	document.body.classList.toggle('dark-mode');
+ // document.getElementById('container1').className ="w3-white w3-text-grey w3-card-4 dark-mode";
+  //document.getElementById('container2').className ="w3-container w3-card w3-black w3-margin-bottom";
+  //document.getElementById('container3').className ="w3-container w3-text-white w3-card w3-black w3-margin-bottom";
+  //document.getElementById('title1').className ="w3-text-white w3-padding-16";
+  //document.clear
+ 
+   element.classList.toggle("dark-mode");
+}
+);
+
+
+
+
+</script>
+  
   <!-- The Grid -->
   <div class="w3-row-padding">
   
     <!-- Left Column -->
     <div class="w3-third">
     
-      <div class="w3-white w3-text-grey w3-card-4">
+      <div id="container1" class="w3-white w3-text-grey w3-card-4">
         <div class="w3-display-container">
-          <img src="/Portfolio/img/perfil.jpg" style="width:100%" alt="Avatar">
+          <img src="/img/perfil.jpg" style="width:100%" alt="Avatar">
           <div class="w3-display-bottomleft w3-container w3-text-black">
             <h2>Guilherme Bittencourt Corrêa</h2>
           </div>
@@ -64,7 +95,7 @@
         </center>
            
     
-        </body>
+      
         
     </html>
     </p>
@@ -79,8 +110,8 @@
     <!-- Right Column -->
     <div class="w3-twothird">
     
-      <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Experiência</h2>
+      <div id="container2" class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 id="title1" class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Experiência</h2>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Desenvolvedor Web / Ajotta.com</b></h5>
           <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2021 - <span class="w3-tag w3-teal w3-round">Até o momento</span></h6>
@@ -103,7 +134,7 @@
      
       </div>
 
-      <div class="w3-container w3-card w3-white">
+      <div id="container3" class="w3-container w3-card w3-white">
         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Educação</h2>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Graduação em Sistemas de informação</b></h5>
