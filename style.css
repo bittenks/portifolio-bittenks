@@ -24,7 +24,6 @@ a{
 }
 
 
-
 body.dark-mode {
     color: #000!important;
     background-color: #000000da!important;
@@ -89,6 +88,6 @@ body.dark-mode {
 	color: #f39c12;
 }
 
-button {
+button, #cv {
 	margin-bottom: 1rem;
 }
